@@ -19,6 +19,10 @@ class Game(scrapy.Item):
     
     title = scrapy.Field()
     subtitle = scrapy.Field()
-
+    author = scrapy.Field()
+    list_rank = scrapy.Field()
+    price = scrapy.Field()
+    iap = scrapy.Field()
+    
 
     
