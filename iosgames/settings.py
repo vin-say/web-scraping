@@ -19,7 +19,7 @@ FEED_FORMAT = 'csv'
 FEED_URI = 'iosgames.csv'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'iosgames (+http://www.yourdomain.com)'
+USER_AGENT = 'GR Data Science (+https://github.com/vin-say/web-scraping)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
