@@ -7,10 +7,11 @@ class Iosgamescrawler(CrawlSpider):
     
     name = 'iosgamescrawler'
     allowed_domains = ['apps.apple.com']
-    start_urls = ['https://apps.apple.com/us/genre/ios-games/id6014?letter=B&page=2#page']
+    start_urls = ['https://apps.apple.com/us/genre/ios-games/id6014?letter=A&page=1#page']
 
     rules = (
-#        Rule(LinkExtractor(allow = ('genre/ios-games/id6014\?letter=(\D)&page=(\d+)#page'))),
+        # paginate by letter
+        Rule(LinkExtractor(allow = ('genre/ios-games/id6014\?letter=(\D)&page=(\d+)#page'))),
         Rule(LinkExtractor(allow = 'app\/(.+)\/id(\d+)', restrict_xpaths = '//div[@id="selectedcontent"]'), callback = 'parse_game'),
 #        Rule(LinkExtractor(allow = 'app\/(.+)\/id(\d+)'), callback = 'parse_game'),
 
