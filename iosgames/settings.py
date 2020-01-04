@@ -20,7 +20,7 @@ NEWSPIDER_MODULE = 'iosgames.spiders'
 FEED_FORMAT = 'csv'
 FEED_URI = 'iosgames.csv'
 
-# Crawl responsibly by identifying yourself (and your website) on the user-agent
+# Crawl responsibly by identifying yourself (and yougamesr website) on the user-agent
 ua = UserAgent()
 USER_AGENT = ua.random
 
